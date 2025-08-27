@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Received</title></head>
+<body>
+  <h1>Oxirgi qabul qilingan ma'lumot:</h1>
+  <p>Ism: {{ name }}</p>
+  <p>Familiya: {{ surname }}</p>
+  {% if image_base64 %}
+    <img src="data:image/jpeg;base64,{{ image_base64 }}" alt="rasm" style="max-width:300px;">
+  {% else %}
+    <p>Rasm yo'q</p>
+  {% endif %}
+</body>
+</html>
