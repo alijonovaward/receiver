@@ -14,8 +14,8 @@ def receive_event(request):
     global last_event
 
     if request.method == 'POST':
-        name = request.POST.get('name')
-        surname = request.POST.get('surname')
+        name = request.POST.get('first_name')
+        surname = request.POST.get('last_name')
         image = request.FILES.get('image')
 
         img_b64 = None
